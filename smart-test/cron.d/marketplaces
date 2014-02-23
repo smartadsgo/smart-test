@@ -1,0 +1,6 @@
+MAILTO=dl-shsearchengineering@simplyhired.com, heping@simplyhired.com
+
+MARKETPLACES_JAR=libs/marketplaces.jar
+
+# Execute allocator code 
+30 23 * * * source ./.env; java -cp $MARKETPLACES_JAR:libs/*:configs/$SH_ENV com.simplyhired.marketplaces.Allocator -config configs/$SH_ENV/settings.cfg
